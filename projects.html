@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projects</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Arman <span>Shaikh</span>
+            </div>
+            <div class="links">
+                <div class="links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="./index.html">Home</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                        href="./about.html">About</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="./skills.html">Skills</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="./projects.html">Projects</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="./contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="main-container">
+            <h1 data-aos="fade-up" data-aos-duration="1500">My Projects</h1>
+            <div class="projects-container">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h2>Project 1</h2>
+                    <p>A website I built using HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h2>Project 2</h2>
+                    <p>An e-commerce platform built with React and Node.js.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

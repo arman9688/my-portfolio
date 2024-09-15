@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in">Arman <span>Shaikh</span></div>
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="main-container">
+            <h1 data-aos="fade-up" data-aos-duration="1500">Contact Me</h1>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                <input type="email" name="email" placeholder="Your Email" required required data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
+                <textarea name="message" placeholder="Your Message" required required data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100"></textarea>
+                <button type="submit" required data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
